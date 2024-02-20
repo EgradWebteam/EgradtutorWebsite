@@ -23,6 +23,11 @@ const users = [
   }
 ];
 
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+  });
+
 app.use(bodyParser.json());
 app.use(express.static(process.cwd()+"/client/build/"));
 
