@@ -1,10 +1,12 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const app = express(),
       bodyParser = require("body-parser");
       port = 8080;
 app.use(bodyParser.json());
 // place holder for the data
+app.use(cors());
 const users = [
   {
     firstName: "first1",
