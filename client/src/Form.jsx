@@ -9,7 +9,7 @@ const Form = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/submitForm', { name, phoneNumber });
+      const response = await axios.post('http://localhost:3080/api/submitForm', { name, phoneNumber });
       console.log('API Response:', response.data);
     } catch (error) {
       // Handle errors, show an error message, etc.
